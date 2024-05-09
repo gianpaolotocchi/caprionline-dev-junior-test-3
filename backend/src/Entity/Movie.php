@@ -8,6 +8,10 @@ use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Attribute\Groups;
+// use App\Entity\Genre;
+// use App\Entity\MovieGenre;
+// use App\Entity\MovieActor;
+// use App\Entity\MovieKeyword; 
 
 #[ORM\Entity(repositoryClass: MovieRepository::class)]
 #[ORM\Table('movies')]

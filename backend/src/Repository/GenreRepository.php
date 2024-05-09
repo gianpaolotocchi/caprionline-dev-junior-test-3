@@ -21,6 +21,22 @@ class GenreRepository extends ServiceEntityRepository
         parent::__construct($registry, Genre::class);
     }
 
+    // public function findAllWithGenres(string $genreName): array
+    // {
+    //     // return $this->createQueryBuilder('g')
+    //     //     ->andWhere('g.genres = :val')
+    //     //     ->setParameter('val', $value)
+    //     //     ->getQuery()
+    //     //     ->getResult();
+    //     return $this->createQueryBuilder('g')
+    //     ->leftJoin('g.movieGenres', 'mg')
+    //     ->leftJoin('mg.movie', 'm')
+    //     ->andWhere('g.name = :genreName')
+    //     ->setParameter('genreName', $genreName)
+    //     ->getQuery()
+    //     ->getResult();
+    // }    
+ 
     //    /**
     //     * @return Genre[] Returns an array of Genre objects
     //     */
